@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NazwaSnack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+nav .navbar-brand{
+  font-weight: bold;
+}
+nav .navbar-brand span {
+  color: #ff0157;
+}
+.text span{
+  color: #ff0157;
+}
+.introduc {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.text {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 50px; /* Adjust the padding value as needed */
+}
+
+.nav-item img {
+  margin-right: 8px; /* Memberikan jarak antara ikon dan teks */
+}
+
+.moto {
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Mengatur jenis huruf */
+  color: #333; /* Mengatur warna huruf */
+  margin-top: 20px; /* Memberikan sedikit jarak dari atas */
+}
+.moto p:first-child {
+  font-size: 32px; /* Mengatur ukuran huruf yang lebih besar */
+  font-weight: bold; /* Membuat teks menjadi bold */
+}
+.moto p:first-child span {
+  color: green; /* Mengatur warna hijau untuk bagian tertentu */
+}
+.moto p:last-child {
+  font-size: 20px; /* Mengatur ukuran huruf yang lebih kecil */
+}
+.divider {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.divider img {
+width: 100px; /* Atur lebar gambar divider */
+}
+.carousel-inner img {
+  max-height: 650px; /* Batasi tinggi gambar */
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+.carousel {
+  padding: 20px; /* Tambahkan padding untuk memberikan ruang di sekitar carousel */
+}
+.card-container {
+            display: flex;
+            gap: 2rem; /* Menambahkan jarak antar kartu */
+            margin-left: 2rem; /* Menambahkan jarak untuk kartu awal dari kiri */
+        }
+        .card {
+            width: 18rem;
+            /* height: 30rem; */
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden; /* Memastikan konten tidak keluar dari kartu */
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Tinggi konsisten untuk semua gambar */
+            object-fit: cover; /* Memastikan gambar terpotong dengan baik dalam kotak */
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .card h4 {
+            margin-top: 0;
+        }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">NazwaSnack<span>.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home" data-target="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu" data-target="menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-target="contact">Contact</a>
+              </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+      </nav>
+
+      <div id="home" class="carousel slide">
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Your paragraph text.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Aneka Kue</h5>
+                    <p>Kami menyediakan berbagai macam kue manis gurih dan asin.</p>
+                </div> -->
+            </div>
+        </div>
+      </div>
+
+  <div id="menu" class="moto">
+      <p>Kenapa harus beli makanan ringan di <span>NazwaSnack?</span></p>
+      <p>Karena kami menyediakan kualitas produk yang baik, banyak pilihan yang beragam, dan pelayanan pelanggan yang baik.</p>
+    <div class="divider">
+      <img src="./img/kriting1.png" alt="divider"> 
+      <p>Pilihan Menu</p>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+        <img src="./img/pempektumpeng.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4>Pempek Tumpeng</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/kecil.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4>Pempek Mini</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/selam.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4>Pempek Kapal Selam</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+
+    <div class="card">
+      <img src="./img/lenggang.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h4>Pempek Lenggang</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+</div>
+
+  <footer id="contact" class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="text">
+      <!-- <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a> -->
+      <p class="introduc">NazwaSnack<span>.</span></p>
+      <p>merupakan penjualan yang bergerak dibidang makanan ringan, kami menyediakan berbagai macam produk seperti pempek, camilan manis, dan lainnya.</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#menu" class="nav-link p-0 text-body-secondary">Menu</a></li>
+        <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Contact</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="./img/envelope.svg" alt="">
+          <a href="#" class="nav-link p-0 text-body-secondary">popydwiputri182@gmail.com</a>
+        </li>
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="./img/whatsapp.svg" alt="">
+          <a href="https://wa.me/qr/F4OTG2QPK5J5H1" class="nav-link p-0 text-body-secondary">+6285269377401</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="col mb-3">
+      <h5>Follow</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="./img/instagram.svg" alt="">
+          <a href="https://www.instagram.com/nazwasnack1" class="nav-link p-0 text-body-secondary">nazwasnack1</a>
+        </li>
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="./img/facebook.svg" alt="">
+          <a href="https://www.facebook.com/lela.ledy.9?mibextid=ZbWKwL" class="nav-link p-0 text-body-secondary">Lela Ledy</a>
+        </li>
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="./img/tiktok.svg" alt="">
+          <a href="https://www.tiktok.com/@nazwasnck?_t=8n5SmGZWTI8&_r=1" class="nav-link p-0 text-body-secondary">nazwasnck</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
